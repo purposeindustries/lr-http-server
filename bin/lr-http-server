@@ -18,5 +18,5 @@ program
   .option('-D, --debounce-delay <n>', 'The applied delay for file watching in milliseconds, it can be used for grouping changes')
   .parse(process.argv);
 
-simpleHttpMime(program.port, program.dir, program.url, program.livereload, program.watchFiles, !program.disableBrowserOpen, program.extensions, +program.debounceDelay);
+simpleHttpMime(program.port, program.dir, program.url, program.livereload, program.watchFiles, !program.disableBrowserOpen, program.extensions, +program.debounceDelay)
   .parse(process.argv);
